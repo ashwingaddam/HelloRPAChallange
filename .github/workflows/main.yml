@@ -8,7 +8,7 @@ name: UiPathDemo
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   my-job:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: start-step
         run: echo "Start Hello!"
