@@ -1,0 +1,226 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1320,1464" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:upad="clr-namespace:UiPath.Persistence.Activities.Delay;assembly=UiPath.Persistence.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Persistence.Activities</x:String>
+      <x:String>UiPath.Persistence.Activities.Delay</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>HelloRPAChallage_Windows.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="546,1399" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Overview - Deprecation timeline" sap:VirtualizedContainerService.HintSize="484,496" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="dde22266-4e0b-4be2-90e1-a271ae5f98ed" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,279" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,164" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" Version="V3" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="2043, 597, 1300, 713" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAETSURBVDhPtdM/S0JRHMZxtURJQQT/QJgGLU1O0ktw6A00uglN7b4CA1cnB0WNlgoHtTfgG0hchMLBoV2aRNDvE8frn9RuiQc+nMM55z73d++51zFOR6b7mAe8o2JDeWn8ASug4rDR2OeDB07UsQiACwH4zX6tzedOcIY27uHGSoBKC6KBIo5NQBgtFHCJHnSh1/QrAdrcxyvcJuAUA7xAVVwjhR+P8FvAM+LoogQ92p8CnnCOIR5xmAC9xDd04DMBF/hEDQlsDdAxHqGKL9wiiTwmuIOq2R5g7ngFHdUYI9M3EUUMuwPUGKvsLHK4QcjM+5FBGhu/RE06v1PW2voaY1XwACtAP4YS7dLFOh0r4J8i0xkQTbpIouAIwAAAAABJRU5ErkJggg==" InformativeScreenshot="cfebf6e10546150b431e7b52f7db19b1.jpg" Selector="&lt;html app='chrome.exe' title='Overview - Deprecation timeline' /&gt;" Title="Overview - Deprecation timeline" Url="https://docs.uipath.com/overview/other/latest/overview/deprecation-timeline#studio" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="484,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Welcome&quot;]" />
+    <upad:ResumeAfterDelay StatusMessage="{x:Null}" WaitItemDataObject="{x:Null}" DisplayName="Resume After Delay" sap:VirtualizedContainerService.HintSize="484,90" sap2010:WorkflowViewState.IdRef="ResumeAfterDelay_1" ResumeTime="[new DateTime(2024, 5, 9, 10, 30, 0)]" />
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="484,497" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="[string.Format(&quot;{0}\Downloads\challenge (3).xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.UserProfile))]">
+      <ueab:ExcelApplicationCard.Body>
+        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,228" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Rpa Challenge" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="9551e2e5-e572-4a7f-9add-ef4c0f9de3dc" Version="V1">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1295.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Start'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="http://rpachallenge.com/" DesignTimeRectangle="23, 1078, 607, 68" ElementType="Button" FriendlyName="'Start'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' aaname='Start' check:text='Start' /&gt;" Guid="d7ea9946-bd3a-4f22-ba8e-1591c8673140" ImageBase64="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" InformativeScreenshot="7cbe18da65b4da1ef97ecce51f40864e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ueab:ExcelForEachRow DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,982.4" sap2010:WorkflowViewState.IdRef="ExcelForEachRow_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="False">
+                      <ueab:ExcelForEachRow.Body>
+                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                          </ActivityAction.Argument2>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,797.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'First Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,228" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[CurrentRow.ByField(&quot;First Name&quot;)]">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="http://rpachallenge.com/" DesignTimeRectangle="1348, 417, 537, 58" ElementType="InputBox" FriendlyName="'INPUT lXjEF'" FullSelectorArgument="&lt;webctrl id='lXjEF' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='lXjEF' tag='INPUT' type='' aaname='' /&gt;" Guid="d5b461f3-d965-4b35-861c-fb804b95ef80" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAh0AAAA+CAYAAACPx6lWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEtSURBVHhe7dgxDQAxEASx5w/iqF6qBMFrKltaDqP9FgAgIDoAgIToAAASogMASIgOACAhOgCAhOgAABKiAwBIiA4AICE6AICE6AAAEqIDAEiIDgAgIToAgIToAAASogMASIgOACAhOgCAhOgAABKiAwBIiA4AICE6AICE6AAAEqIDAEiIDgAgIToAgIToAAASogMASIgOACAhOgCAhOgAABKiAwBIiA4AICE6AICE6AAAEqIDAEiIDgAgIToAgIToAAASogMASIgOACAhOgCAhOgAABKiAwBIiA4AICE6AICE6AAAEqIDAEiIDgAgIToAgIToAAASogMASIgOACAhOgCAhOgAABKiAwBIiA4AICE6AICE6AAAEi86ZsbMzMzs912eDgAgIToAgMDuAbuPx+fbQsOEAAAAAElFTkSuQmCC" InformativeScreenshot="6e4c67d4eec108f734ec215fea45a051.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, Image">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="1348, 393, 80, 21" ElementType="Text" FriendlyName="'First Name'" FullSelectorArgument="&lt;webctrl aaname='First Name' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='First Name' tag='LABEL' type='' check:text='First Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAZCAYAAACvrQlzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPZSURBVGhD7ZcLa9tIFIX3//8IERERQZT14tbBwcXBELOCpgrZbXFxiLBYUbN2wzqrFoFCzOmZh6yR5ZCkmdKF1YEBz/vON/dejX9BK6tqgVpWC9SyWqCW1QK1rBaoZbVALevpQPMFplcL5LraarcMoAUW1xNMJtslRcbemzCA4/gYz9Xo79V9niHL73Vtt4plzH0TrNa6wVCW0qZUWPTflAH0BuGhA/eoj8GbgVEuIRla8tDpiQPnZKpru6Uuz0EQLnRLpafM/5lqAA3CG13f0l2O7EuOjW8VrH8t1M9lgnipfksVK6RX9KQZL+BOt1HF1wyXxwRyfMm16Kl6/rYk0D2O2wvw9rNu1NoN9B753wm9eor0Vq9p2Cf7uZ+05S7badtDNtfENRczjrlKsdpt+jOATvv0mj7Ko8hDH44Qnnjam9S8xXlH1l3Pg+cKKD6GsfBrtb7o25TDkK1NqbVDRKdc++htbUwD6DJC90Ct5x54cHkR3qsIk9/VGmruFH32d4dD+Owvx5W2ZR/68PZceJv2DsJPJrEc6dg4l+fK38EobkTsy4ByUf90Wt1W8R49tvX+LLfJMelzc3+s0gb15JAXMNYJhh5tOq9sqs3X/c5RiHlpwzpDcsb5AswWUMfrY/JFNshxE+EM+wR0NEJamrxe4fJ13ebVBWEyWsJ5lfvv5yEC7tG5WOkWpQZQx+UGvClVuoj+0d27gO6xbn44NNDuO2OTrVTxLKCiMhvSe6rQr82XNnUQ3apqpRWiX5tAO6ZdQssQvnSArfj9NIbnEKDcU3Hxzppf4/kZL2Szh1IDqH+WqPwmS46iBLYz5OuLCS0uugTAw+x30BtHSMzcSj0bKF8f8Zsq9M35ctxB5Umm6odVQPuNbR9o/0zv2wDV3i08eeNouoiUZjARemEObQKVolcuZhHGrwOZk/xRQixKzwdKFTEGOvQbQPeHSGStruSUYWsRaGf03nhKmkU9K0vZBfpvyg1iLEyn/Fif911AqeJ6IEM/EGmpnM904DoehjNV3WgdY7jPcVaAZoh+48doGMsuU+kFn5XnSfXyoewCFTmUHhnQIzP9RElGHOcx6asRDF9x0DHSx55N22uXoU8A1YUwV/KwjtdFOFvJ9FTcJghfMRzFl9gKUErkcV5cN9TnWvNP0B892Ta4rp/Besjnf4Xo+TykOLgo4sNmfB3FM2fTv2O+0ENrl6Ff8/C7OaJjv9qPT6HeuznmtTVeCJQS5yqfZ7K4AQYftz5ylAHUssTD+pG/mFZFr8nNPx4/SI/9df5xQP+naoFaVgvUslqgltUCtSrgGyOqi8qARSl4AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Last Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,228" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[CurrentRow.ByField(&quot;Last Name &quot;)]">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="http://rpachallenge.com/" DesignTimeRectangle="783, 417, 537, 58" ElementType="InputBox" FriendlyName="'INPUT RRb5Y'" FullSelectorArgument="&lt;webctrl id='RRb5Y' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='RRb5Y' tag='INPUT' type='' aaname='' /&gt;" Guid="42bba0b1-e54a-4431-bd8e-0bb14dcf0287" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAh0AAAA+CAYAAACPx6lWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEtSURBVHhe7dgxDQAxEASx5w/iqF6qBMFrKltaDqP9FgAgIDoAgIToAAASogMASIgOACAhOgCAhOgAABKiAwBIiA4AICE6AICE6AAAEqIDAEiIDgAgIToAgIToAAASogMASIgOACAhOgCAhOgAABKiAwBIiA4AICE6AICE6AAAEqIDAEiIDgAgIToAgIToAAASogMASIgOACAhOgCAhOgAABKiAwBIiA4AICE6AICE6AAAEqIDAEiIDgAgIToAgIToAAASogMASIgOACAhOgCAhOgAABKiAwBIiA4AICE6AICE6AAAEqIDAEiIDgAgIToAgIToAAASogMASIgOACAhOgCAhOgAABKiAwBIiA4AICE6AICE6AAAEi86ZsbMzMzs912eDgAgIToAgMDuAbuPx+fbQsOEAAAAAElFTkSuQmCC" InformativeScreenshot="232a940707f48776ee7c10353ab5e9b2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, Image">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="783, 393, 79, 21" ElementType="Text" FriendlyName="'Last Name'" FullSelectorArgument="&lt;webctrl aaname='Last Name' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Last Name' tag='LABEL' type='' check:text='Last Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAZCAYAAABNcRIKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOcSURBVGhD7ZfxS9tAFMf3//8Rh8HDoHF1HR2RSkdhZQFnxU05yDBYCCumVlvjCERavnuXXNpr087URrYf8oFA7pKXe+97995d3qGiNCoxS6QSs0QqMUukErNEKjFLpBKzRCoxS0QTM4QvBPxH1XwLpjGipwjxVLVXkvrh3kaqrREH8ISHIFbt/wxNTBc2Y7Bd1XwL7hxYzIJzp9orSf1g3Ia7rGch+3/HZmLGI/g/BcRNgOhZdkxopYXqPoP6bnsQwoU/1pbQc4Sw14HJTHR6IcKcXYYSc4eBn3hYWITrxHzJLzk2ZcSEbiePPlxa+T1a+bKdEY9X98+hb97//Z2CYkbw2haYDNLg4NygYC20vYtFm8hFc08KYYDv0Tv0jH/sIpBp7dqpvXatHkv5cdZFbYejea3JmROzoF/J2HW0PpsLvrH9FrwoxKXNU/us/72Dvj6LD5ewZ3FxGDTRbK+O7kA9VxQSc3Reo0E4bBHOZmRyf4GGHECz6X8hp8wO+llNHMjgGRpXyrMN0lx+MxmXN+FlgS3ZF/Urm0h+LBBmvj0J2JzB4BxW26dpUTyQ/S6D2emn7WkPLXpvwXYaQhxTrLyFnlb/C4g5hHNAg7Y81dbwWjA0m1RMGkCrdfFvSrc1YqxG92OE7pGW7gv2xf1KxayhO1ZtRfCVVipr4FJfhUQSx4FDIxCJbf4dxJdoLOlVQMy0v/Fj+WvE8gcjD20KUKaD+aEJR/gI9bq4sZjE3SmsLN0X7DfwKxGENjTVnLGmf+hQ6VBiJvcqvRevtCRYTiJ5QmExa+ehams8UV1bYSOLuXCaqJskLK/jIhPvNWISw28UkEz3X3kxC/m1rZh0sjiljUesuLzBfDILiBkmqcaOupR0i4zOZM3KbGIE1zSArwcXwNnXZu+VYlJIOD2kdD+0wGf2Rf0ithATN7Jk5EsExi46J22Ie9UmcmI2vqfHlvRSRwD6IKdn5olAEFEPHTUC0YQpl7vmdL9DNWi3gQs1W/EgLeZ1+mbCA6UsM2BfDV88GuUmNUl3ubFok1HQr63EVHWb7TchVFyTxx46NLns8FS9k5ITU87o/JoPFF63YRnzZ8ZhG57cEel+5vR0BHFipUcH9Z7V9ua7oDrKZM9zgiWsyxAKUqb70sou5NdWYhIqrmwMeZmfHPhLPxWamMWY0LlstjuvRR6aX/ptLJdifm3JC7/DG4tZsZ5KzBKpxCyRSswSqcQsDeAPG9wm9DCFrmIAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="333.6,167.2" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="http://rpachallenge.com/" DesignTimeRectangle="769, 720, 145, 45" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Submit' check:text='Submit' /&gt;" Guid="ea8055c8-9f77-44fc-9cbc-398548389a6c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJUAAAAxCAYAAADTL+u3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASOSURBVHhe7Z3NaxNBGIfzr/gniCc9evQkHr16CoIgFj1I6UUvoiDooWCRgiikmIPgB4gSED9AiEgOgSoUWkL6gVTapk2bpnl9f7M7yexmmjR0xA3+XnhoO/Nusuw8fWd2Ura5Tqcj4ODgwNButw37+/uEDMS6Yt2xLuVcmZDYarUMe3t7fezu7pL/FJ8P1hUrmHXJSGVlQmKz2ZSdnR3Z3t7u0mg0CDG4XsAT+GIFg0dGKivU7o+ytG+ckc75HCEjAW/gjxUrh29g3P71094DCDkK8Acewacc5sutrS1vIiGjAI/gUw52ra+ve5MIGQV4BJ9yWHytra15kwgZBXgEn3Kbm5uysrLiTSJkFOARfDJS1et1bxIhowCPKBUJSleqjY0NSkWCAI/gE6UiwaBUJDiUigSHUpHgUCoSHEpFgjOeUk1ekM79i4p+zXv6yT9lvKSafiqyIaloilTu9uVKDX2/RR4n27tUtA/xzml7/D5q88WvbyLTJ5KvYfN/v0q2+5iaEWkjuSritpvzcM9T84ZF433v+AwyPlJhUFq4ojoAX25Flep5US+wucwiC0mxjiVV7ZVISQW2VBeidlkWeeDJR7xMCZemrMeaGCbVpeR71/SXBjHvtL251js+g4yPVF/jQflyLtmef9irAM5UeCypKp5B+xSL5fa5UtWfJvMT3DQFNYphUqXwnWfGGR+pzMXVkSl4+m73r6+CS2X7Fmf621owZsB7fYCQmmMqLaXKDmZgNGpaEY6wOP9rlerD2V5bN1+nS1TLhYfJYww6nRlvNMecE6XKDvlrvUV6Wy90RddTT1JToUO4NZW+z2I89bpVys2HhFVUKxVvyukHhc9RjspIqbJI/qKuqfQuzC7OEUYwXaSnqtexpPJFQ2V4lpLYleqBioio3nRyVKS6trX0nPX8KFXWwV7VWx1UK1gtWUWOJVV6+pvUKllHJVJeOHd5ifwTplBJOxLI9FvRypfMz5RqbDgnsoqrrhf/Ua/dDPDQwVJmnbbDpAL2LtPdk0rnP4unuk+oaCrZfHJKpFRZozCj6xutRrc9ffbCv3XavsdtL5w2h0g6XSvdd9oHSXVeqxWqorvx2JcfC978LJ0pXY8h5m918ylV1rD7VM4gRdhKlRLETj2rxf67xXu6+Eakd8IHSWVfb1ClAi91+kOs4nwVZ7OUUmWN/N14n0dj0d6dqRyrmGI0fqY/qtG1jx2Qhpalcnw3h91xs1mqfbOHfOyS3lGvqAjmmEFrKvs6zkZnakOUUmWRicsqVHyRbeDur9z/2V/ESemUdBCtjDbwOd4j7UvnW0l84TvmsMpm9rTUrEJSWkqVdbCLPpmqNIOY0MXzHWfjkvw1xlcqklkoFQkOpSLBoVQkOJSKBIdSkeBQKhIcSkWCQ6lIcCgVCU5XKj70jIQCHvFJeiQoCamWl5e9SYSMAjwyUuGB6niq7M7VU95EQo4C/IFH8Kn7HPWlj69l64rnb40IGQK8gT/d56jjvyDhSf1LS0tSrValVCpJsViUubk5KRQKhHiBH/AEvsAb+AOPms2m/AHCt0DUqE0KCwAAAABJRU5ErkJggg==" InformativeScreenshot="186d0b5a3511e2648772d56b7e6d4dfa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, Image" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelForEachRow.Body>
+                    </ueab:ExcelForEachRow>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-2569, -7, 2578, 1420" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOASURBVFhH7djXTuNAFAZgHmkfcFeik0oK6Z36QEhcICEFCbEQEggCLSkOOTv/eMYlHm88Y3avdqRfLijMx3E8hY3/7W+1i4sLOj8/p7OzM57T01M6OUFO6Pj4mHpIr0fdbo863S51Oh1qI+02tVptarZa1Gw2qcFSbzSoXm9Qq90e53K5b6KLeA24z8/P0Cy8WYg45wvPcUHL5ZLwB/dvbxm69TVIVA0Qy7J45jJzO7P5XISdz9gRYddTfj7jxyk/zjgSwLe3N+r3+6yizfhIG7iMCbSREvj+/k7j8Zhubm6oVq/HQ+I7F6igwJlW8PX1lV5eXmg4HNL19TVVqjVzJF4ICVytXhjQqdpUDXx+fqbRaERPT0/08PBAV1dXVK5UzJB4WwFU4eYOTg8I2GAw4Lj7+3u6u7ujy8tLKpfLY9Ft9IahhAN9MDsqHK6B4tAQYCaTUSZfKJDoNnrDOKcCujhEBZQ4AQSWZYDH+siqx/PIqvhIP1mGwxHl8iZANgj7gRIlE8TxiOpN+NEF4trNlCaTKX2wWNaCAfP6QMwQGHj9KBkPTsJ4bJx7rsLZQOAk8DBnAMT0FQTiEftxuA8Qh7LOV3F/qp4EZg9zBkA2r9pAgQqBBXF+oB8XBjzUB2Lix3zqQ8lExK2rngRmsiZAtirxAcVjdiFBHBDhuHBgOpvVB2LJJL+DXhRiowVE3DPBOcCMARDrOVRQiULEfTu4dn8WxCHhwFQ6YwBkC03MAA4I8aE8VTPE2UCLkum0PhArYW8FlaiYOATzfDJlAMQynVdwFeMNA8TBfXxMODCRShkA2R5CCWQdr4ch63G/BPAgaQBkK97gd9ATNUpmDY4FOAeYSOoDq7WaA1QjVGEwDZwE7icSBsBqjSwGVENW48LW4eSj9QEPDICVajUCUAOGrOAkcG//QB9YrqiAAuRBRYJNgjAZAHfNgBUBDIKioUQUKG84cG9fH1gql/k0pOw0ahSg1QC4YwQsxQAqIGEBcHt3Tx94VCrpAxWAdeHAnV19YPEoKnBiBJMBcMsMeBQCtEFxUN4AuLm9ow8sFAG0vgwSFmNgvljkH1b90q8M+vixtW0ALBT4h/9Fvm9u6QPx7wjs+LGpxr4VW0PsvrDBwR4Cy3SshLHYxHoOSyasSjDxY27F9IUZAoMwxjkMJXhb8ULgkSKoHHBGwP8tUtvY+A3VxXpRUoraswAAAABJRU5ErkJggg==" InformativeScreenshot="a7b4aee75df2648f54dd699f4dbc8ff5.png" Selector="&lt;html app='chrome.exe' title='Rpa Challenge'/&gt;" Title="Rpa Challenge" Url="http://rpachallenge.com/" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+            <ui:AddLogFields DisplayName="Add Log Fields" sap:VirtualizedContainerService.HintSize="337.6,24.8" sap2010:WorkflowViewState.IdRef="AddLogFields_1">
+              <ui:AddLogFields.Fields>
+                <InArgument x:TypeArguments="x:String" x:Key="URL">http://rpachallenge.com/</InArgument>
+              </ui:AddLogFields.Fields>
+            </ui:AddLogFields>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelApplicationCard.Body>
+    </ueab:ExcelApplicationCard>
+  </ueab:SequenceX>
+</Activity>

@@ -1,0 +1,126 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Download" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="938.4,773.6" sap2010:WorkflowViewState.IdRef="Download_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Download" sap:VirtualizedContainerService.HintSize="475.2,708.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Microsoft .NET Framework 4.8 offline installer for Windows" sap:VirtualizedContainerService.HintSize="433.6,616" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="WindowMessages" ScopeGuid="358c0988-1b72-4510-8619-406f5d9007c7" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,399.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Download the'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://support.microsoft.com/en-us/topic/microsoft-net-framework-4-8-offline-installer-for-windows-9d23f658-3b97-68ab-d013-aa3c3e7495e0" DesignTimeRectangle="602, 1026, 655, 27" ElementType="Text" FriendlyName="'Download the'" FullSelectorArgument="&lt;webctrl parentid='supArticleContent' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='supArticleContent' tag='A' type='' aaname='Download the Microsoft .NET Framework 4.8 offline installer package now.' check:text='Download the Microsoft .NET Framework 4.8 offline installer package now.' /&gt;" Guid="98453d25-3c9c-48cc-a1b0-ad8bf93d76c7" ImageBase64="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" InformativeScreenshot="f3993e998fe1b49b945114684b2645b7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Microsoft .NET Framework 4.8 offline installer for Windows' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c0b4d643-5c13-48b2-81f2-961d41ceb48c" InformativeScreenshot="3aa890fbf566551b96ccc9a52bbfab39" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' idx='*' /&gt;&lt;ctrl name='Downloads' role='document' /&gt;&lt;ctrl name='Recent downloads' role='list' /&gt;&lt;ctrl name='What do you want to do with ndp48-x86-x64-allos-enu.exe?' role='list item' /&gt;&lt;ctrl name='Save as More options' role='menu button' /&gt;&lt;ctrl name='Save as' role='push button' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-2569, -7, 2578, 1420" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABsSURBVDhP7c6xEYAgDIXhtwouJAuwiu4BR8cSspQoA8SkoPCOaOGdFcXXvfyA0070wK8ZgjQj8EMg8Eh0jwWqNV4R62zckuF4GFn7zQ2QildEpMPRBhGZ7+HATroSeCRI8xZoL3WPxQh8DoAu5hJgnVBK6CsAAAAASUVORK5CYII=" InformativeScreenshot="1c017f1a86ff1397325209675a2f2458.png" Selector="&lt;html app='msedge.exe' title='Microsoft .NET Framework 4.8 offline installer for Windows'/&gt;" Url="https://support.microsoft.com/en-us/topic/microsoft-net-framework-4-8-offline-installer-for-windows-9d23f658-3b97-68ab-d013-aa3c3e7495e0" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -1,0 +1,31 @@
+Install-Module PnP.PowerShell -Scope CurrentUser
+Install-Module PowerShellGet -Scope CurrentUser
+Install-Module PackageManagement -Scope CurrentUser
+Install-Module SharePointPnPPowerShellOnline -Scope CurrentUser
+
+uninstall-module SharePointPnPPowerShellOnline
+
+
+$Env:PSModulePath = $Env:PSModulePath+";C:\Users\ashwin.gaddam\OneDrive - UiPath\Documents\WindowsPowerShell\Modules1\"
+Connect-PnPOnline
+Get-InstalledModule -Name "PnP.PowerShell"
+set-ExecutionPolicy -scope Process remotesigned -Force
+
+C:\Users\ashwin.gaddam\OneDrive - UiPath\Documents\PowerShell\Modules;C:\Program Files\PowerShell\Modules;c:\program files\powershell\7\Modules;C:\Users\ashwin.gaddam\OneDrive - UiPath\Documents\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules;C:\Users\ashwin.gaddam\OneDrive - UiPath\Documents\WindowsPowerShell\Modules;
+PS C:\Users\ashwin.gaddam>
+
+Invoke Power Shell: The required module 'PackageManagement' is not loaded. Load the module or remove the module from 'RequiredModules' in the file 'C:\Users\ashwin.gaddam\OneDrive - UiPath\Documents\PowerShell\Modules\PowerShellGet\PowerShellGet.psd1'.
+Could not load type 'Microsoft.SharePoint.Client.ClientAuthenticationMode' from assembly 'Microsoft.SharePoint.Client.Runtime, Version=16.1.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'.
+
+
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+$Env:PSModulePath = $Env:PSModulePath+";C:\Users\ashwin.gaddam\OneDrive - UiPath\Documents\WindowsPowerShell\Modules1;C:\Program Files\PowerShell\7\Modules"
+$Env:PSModulePath
+Import-Module Microsoft.PowerShell.Management
+Import-Module PowerShellGet
+Import-Module PnP.PowerShell
+Import-Module SharePointPnPPowerShellOnline
+Get-Module -FullyQualifiedName $FullyQualifiedName | Format-Table -Property Name,Version
+Get-ExecutionPolicy
+Connect-PnPOnline
